@@ -6,7 +6,14 @@ if(!isIndexPage())
 	exit;
 }
 //Require menu in all subs if logged in
-require("menu.php");
+if($manager->sessionExists())
+{
+	require("includes/nav-bar-logged.php");
+}
+else
+{
+	require("includes/nav-bar-guest.php");
+}
 switch(getSubPage())
 {
 	case "shop":
@@ -14,6 +21,9 @@ switch(getSubPage())
 		break;
 	case "home":
 		require("home.php");
+		break;
+	case "login":
+		require("login.php");
 		break;
 	case "logout":
 		require("logout.php");

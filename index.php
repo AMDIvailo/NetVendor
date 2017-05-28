@@ -9,6 +9,7 @@ session_start();
 <?php
 require("easyauth/user.php");
 require("easyauth/userMgr.php");
+require("includes/header.php");
 $manager = new UserMgr();
 if($manager->sessionExists())
 {
@@ -25,7 +26,7 @@ if($manager->sessionExists())
 }
 else
 {
-	require("login.php");
+	require("contentController.php");
 }
 ?>
 </body>

@@ -1,20 +1,12 @@
 <link rel="stylesheet" type="text/css" href="login.css" />
 <?php
-require("functions.php");
+require_once("functions.php");
 if(!isIndexPage())
 {
 	redirect("/");
 	exit;
 }
-?>
-<form method="post">
-<div id="loginBox">
-Username:<input type="text" name="username" /><br/>
-Password:<input type="password" name="password" /><br/>
-<input type="submit" name="enter" value="Enter NetVendor....." />
-</form>
-</div>
-<?php
+require("loginForm.php");
 if(isset($_POST['username'], $_POST['password'], $_POST['enter']))
 {
 	if($_POST['username'] != "" && $_POST['password'] != "")
