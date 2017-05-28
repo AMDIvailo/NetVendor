@@ -3,7 +3,7 @@
 require("functions.php");
 if(!isIndexPage())
 {
-	redirect("/Blackwall");
+	redirect("/");
 	exit;
 }
 ?>
@@ -11,7 +11,7 @@ if(!isIndexPage())
 <div id="loginBox">
 Username:<input type="text" name="username" /><br/>
 Password:<input type="password" name="password" /><br/>
-<input type="submit" name="enter" value="Enter Blackwall....." />
+<input type="submit" name="enter" value="Enter NetVendor....." />
 </form>
 </div>
 <?php
