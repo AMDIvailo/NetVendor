@@ -1,0 +1,32 @@
+<?php
+session_start();
+?>
+<html>
+<head>
+<title>NetVendor</title>
+</head>
+<body>
+<?php
+require("easyauth/user.php");
+require("easyauth/userMgr.php");
+$manager = new UserMgr();
+if($manager->sessionExists())
+{
+	$user = new User($_SESSION['username']);
+	if($user->exists())
+	{
+		require("contentController.php");
+	}
+	else
+	{
+		$manager->deleteSession();
+		redirect("/");
+	}
+}
+else
+{
+	require("login.php");
+}
+?>
+</body>
+</html>
