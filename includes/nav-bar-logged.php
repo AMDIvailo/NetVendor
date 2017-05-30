@@ -3,7 +3,7 @@
       <!-- The justified navigation menu is meant for single line per list item.
            Multiple lines will require custom code not provided by Bootstrap. -->
       <div class="masthead">
-        <h3 class="text-muted">Project name</h3>
+        <h3 class="text-muted">NetVendor</h3>
         <nav>
           <ul class="nav nav-justified">
             <li class="active"><a href="/index.php?sub=home">Home</a></li>
