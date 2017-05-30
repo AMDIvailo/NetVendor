@@ -28,6 +28,9 @@ switch(getSubPage())
 	case "logout":
 		require("logout.php");
 		break;
+	case "test":
+		require("test.php");
+		break;
 	case false:
 		require("home.php");
 		break;

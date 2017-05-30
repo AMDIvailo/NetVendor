@@ -10,17 +10,10 @@
     <br><br><br>
     <!--             Slider 
     ######################################-->
-    <?php include "includes/slider-home.php" ?>
+    <?php include "includes/slider-home.php"; ?>
     <!--         Category-menu 
     ######################################-->
-    <div class="col-sm-2">
-        <div class="list-group">
-            <a href="#" class="list-group-item active">Clothes and Accessories</a>
-            <a href="#" class="list-group-item active">Text</a>
-            <a href="#" class="list-group-item active">Text</a>
-            <a href="#" class="list-group-item active">Text</a>
-        </div>
-    </div>
+    <?php include "categoriesMenu.php"; ?>
     <!--           Products
     ######################################-->
     <div class="col-sm-2">

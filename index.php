@@ -10,6 +10,7 @@ session_start();
 require("easyauth/user.php");
 require("easyauth/userMgr.php");
 require("includes/header.php");
+require("shopApi.php");
 $manager = new UserMgr();
 if($manager->sessionExists())
 {
